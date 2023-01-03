@@ -6,9 +6,17 @@ Arch Linux (WSL2)
 
 采用 GitHub Pages 来部署 blog。首先创建名为`username.GitHub.io`的`Repository`。
 
-安装必要组件：`sudo pacman -S hugo git`
+安装必要组件：
 
-部署`Hugo`组件：`hugo new site .`
+```sh
+sudo pacman -S hugo git
+```
+
+部署`Hugo`组件：
+
+```sh
+hugo new site .
+```
 
 必要时，添加`--force`
 
@@ -18,7 +26,11 @@ Arch Linux (WSL2)
 git submodule add https://github.com/dsrkafuu/hugo-theme-fuji.git themes/fuji
 ```
 
-（维护）更新主题使用：`git submodule update --remote --merge`
+（维护）更新主题使用：
+
+```sh
+git submodule update --remote --merge
+```
 
 运行`hugo server --theme=fuji --buildDrafts`，即可展示页面效果。
 
